@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "NgProjectX"
+    }
+  },
+  "defaultProject": "NgProjectX",
+  "cli": {
+    "analytics": false
+  }
 }
