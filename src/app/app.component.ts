@@ -2,8 +2,27 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  template: '<h1>Hello angular..!</h1>'
+  templateUrl: './app.component.html',
+  styleUrls:['./app.component.css']
 })
 export class AppComponent {
- 
+ title = 'Indian Bikes';
+ bikes = [
+   {
+     bikecompany:'Yamaha',
+     bikename:'R15 V2',
+     topspeed:'135km/hr',
+   },
+   {
+     bikecompany:'Bajaj',
+     bikename:'NS200',
+     topspeed:'145km/hr',
+   },
+   {
+     bikecompany:'TVS',
+     bikename:'Apache RR310',
+     topspeed:'160km/hr',
+   }
+
+ ]
 }

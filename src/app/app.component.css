@@ -1,0 +1,11 @@
+h1{
+    color: darkorchid;
+}
+li{
+    color: darkblue;
+    display: inline-block; 
+    padding: 5px;
+    margin: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px rgb(21, 248, 51);
+}
