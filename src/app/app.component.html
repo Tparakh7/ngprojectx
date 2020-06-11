@@ -2,14 +2,25 @@
 <hr>
 <ul>
     <li *ngFor="let bike of bikes">
-        <div>
+        <div style="color: blue;">
            <b> Company Of the Bike: <p>{{bike.bikecompany}}</p></b>
         </div>
-        <div>
-           <b> Name Of The Bike: <p>{{bike.bikename}}</p></b>
-        </div>
-        <div>
+        <p><b> Name Of The Bike: <p>{{bike.bikename}}</p></b>
+        </p>
+       <div>
            <b> Top Speed Of The Bike: <p>{{bike.topspeed}}</p></b>
         </div>
+        <ng-container *ngIf="bike.instock!=0;then stock;else outofstock">
+        </ng-container>
+        <ng-template #stock>
+         <b>Bikes Available:<mark>{{bike.instock}}</mark></b>
+        </ng-template>
+        <ng-template #outofstock>
+           <b><mark>Bike is Out Of Stock</mark></b>
+        </ng-template>
+
+       
+
+
     </li>
 </ul>
