@@ -6,29 +6,32 @@ import { Component } from '@angular/core';
   styleUrls:['./app.component.css']
 })
 export class AppComponent {
- title = 'Indian Bikes';
+ title = 'Super-Bikes';
  bikes = [
    {
-     bikecompany:'Yamaha',
-     bikename:'R15 V2',
-     topspeed:'135km/hr',
+     bikecompany:'yamaha',
+     bikename:'r1-m',
+     topspeed:'280km/hr',
      instock:5,
      canpurchase:true,
+    
    },
    {
-     bikecompany:'Bajaj',
-     bikename:'NS200',
-     topspeed:'145km/hr',
+     bikecompany:'bmw',
+     bikename:'1000rr',
+     topspeed:'299km/hr',
      instock:7,
      canpurchase:false,
+     
    },
    {
-     bikecompany:'TVS',
-     bikename:'Apache RR310',
-     topspeed:'160km/hr',
+     bikecompany:'kawasaki',
+     bikename:'ninja h2r',
+     topspeed:'320km/hr',
      instock:0,
      canpurchase:true,
-   }
+     
 
- ]
+   }
+  ]
 }

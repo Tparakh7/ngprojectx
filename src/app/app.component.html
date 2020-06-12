@@ -3,29 +3,34 @@
 <ul>
     <li *ngFor="let bike of bikes">
         <div style="color: blue;">
-           <b> Company Of the Bike: <p>{{bike.bikecompany}}</p></b>
+           <b> Company Of the Bike: <p>{{bike.bikecompany | uppercase}}</p></b>
         </div>
-        <p><b> Name Of The Bike: <p>{{bike.bikename}}</p></b>
+        <p><b> Name Of The Bike: <p>{{bike.bikename | uppercase}}</p></b> 
         </p>
        <div>
            <b> Top Speed Of The Bike: <p>{{bike.topspeed}}</p></b>
         </div>
         <ng-container *ngIf="bike.instock!=0;then stock;else outofstock"> 
         </ng-container>
-        <ng-template #stock>
+        <ng-template #stock> 
          <b>Bikes Available:<mark>{{bike.instock}}</mark></b>
         </ng-template>
         <ng-template #outofstock>
-           <b><mark>Bike is Out Of Stock</mark></b>
-        </ng-template>
+           <b><mark>Bike is Out Of Stock</mark></b> 
+        </ng-template> 
 
-        <div [ngStyle]="{display: bike.canpurchase === true ? 'inline-block' : 'none'}">
-            <img src="https://www.google.co.in/url?sa=i&url=https%3A%2F%2Fwww.pngflow.com%2Fen%2Ffree-transparent-png-oaxzc&psig=AOvVaw1J3HC17uXOhbilHmyoTX4-&ust=1591887386704000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCOD_h_6D-ukCFQAAAAAdAAAAABAD" width="16"
-            />
+        <div [ngStyle]="{display: bike.canpurchase === true ? 'inline-block' : 'none'}"> <p>
+            <img src="https://www.google.co.in/url?sa=i&url=https%3A%2F%2Ftrac.cyberduck.io%2Fwiki%2Fhelp%2Fen%2Fhowto%2Fmount%2Fsync&psig=AOvVaw0W5P0eaCw2WknC5WQgg2L0&ust=1591972570475000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCNig_6nB_OkCFQAAAAAdAAAAABAD" width="16"
+            /></p>
         </div>
+        <p>
+           <b>Square Root of 144 : {{144 | sqrt | currency : 'INR'}}</b> 
+        </p>
 
        
 
 
     </li>
 </ul>
+
+<hr>
