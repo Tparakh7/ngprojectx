@@ -1,36 +1,30 @@
-<h1 align="center"><b>{{title}}</b></h1>
-<hr>
-<ul>
-    <li *ngFor="let bike of bikes">
-        <div style="color: blue;">
-           <b> Company Of the Bike: <p>{{bike.bikecompany | uppercase}}</p></b>
-        </div>
-        <p><b> Name Of The Bike: <p>{{bike.bikename | uppercase}}</p></b> 
-        </p>
-       <div>
-           <b> Top Speed Of The Bike: <p>{{bike.topspeed}}</p></b>
-        </div>
-        <ng-container *ngIf="bike.instock!=0;then stock;else outofstock"> 
-        </ng-container>
-        <ng-template #stock> 
-         <b>Bikes Available:<mark>{{bike.instock}}</mark></b>
-        </ng-template>
-        <ng-template #outofstock>
-           <b><mark>Bike is Out Of Stock</mark></b> 
-        </ng-template> 
-
-        <div [ngStyle]="{display: bike.canpurchase === true ? 'inline-block' : 'none'}"> <p>
-            <img src="https://www.google.co.in/url?sa=i&url=https%3A%2F%2Ftrac.cyberduck.io%2Fwiki%2Fhelp%2Fen%2Fhowto%2Fmount%2Fsync&psig=AOvVaw0W5P0eaCw2WknC5WQgg2L0&ust=1591972570475000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCNig_6nB_OkCFQAAAAAdAAAAABAD" width="16"
-            /></p>
-        </div>
-        <p>
-           <b>Square Root of 144 : {{144 | sqrt | currency : 'INR'}}</b> 
-        </p>
-
-       
 
 
-    </li>
-</ul>
 
-<hr>
+ <!-- nav.component.html -->
+ <app-nav></app-nav>
+  <!--/ nav.component.html -->
+  
+  <!-- banner-one.component.html -->
+  <app-banner-one></app-banner-one>
+  <!--/ banner-one.component.html -->
+  
+  <!-- products.component.html -->
+  <app-products></app-products>
+  <!--/ products.component.html -->
+  
+  <!-- banner-two.component.html -->
+  <app-banner-two></app-banner-two>
+  <!--/ banner-two.component.html -->
+  
+  <!-- contact-us.component.html -->
+  <app-contact-us></app-contact-us>
+  <!--/ contact-us.component.html -->
+  
+  <!-- banner-three.component.html -->
+  <app-banner-three></app-banner-three>
+  <!--/ banner-three.component.html -->
+  
+  <!-- footer.component.html -->
+   <app-footer></app-footer>
+  <!-- footer.component.html -->
