@@ -7,7 +7,7 @@
         <h1 align="center"><b>{{title}}</b></h1>
    <ul>
     <li *ngFor="let bike of bikes">
-        <div class="col s12 m6">
+        <div class="col s12 m4">
             <div class="card">
               <div class="card-image">
                 <img src="../../../assets/img/sample-1.jpg">
@@ -16,7 +16,7 @@
               </div>
               <div class="card-content">
                 
-                <p>
+                <p class="appSimpleStyle"> 
                     <b> Company Of the Bike: <p>{{bike.bikecompany | uppercase}}</p></b>
                  </p>
                  <p><b> Name Of The Bike: <p>{{bike.bikename | uppercase}}</p></b> 
