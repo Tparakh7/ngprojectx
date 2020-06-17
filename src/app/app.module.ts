@@ -12,6 +12,9 @@ import { BannerOneComponent } from './layouts/banner-one/banner-one.component';
 import { NavComponent } from './layouts/nav/nav.component';
 import { SimpleStyleDirective } from './directives/simple-style.directive';
 import { PenComponent } from './products/pen/pen.component';
+import { BooksComponent } from './products/books/books.component';
+import { LaptopComponent } from './products/laptop/laptop.component';
+import { BikeComponent } from './products/bike/bike.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +28,10 @@ import { PenComponent } from './products/pen/pen.component';
     BannerOneComponent,
     NavComponent,
     SimpleStyleDirective,
-    PenComponent
+    PenComponent,
+    BooksComponent,
+    LaptopComponent,
+    BikeComponent
   ],
   imports: [
     BrowserModule
