@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
+import { biKes } from './bikes'
+import { BIKES } from './mock-data';
 @Component({
   selector: 'app-bike',
   templateUrl: './bike.component.html',
@@ -13,36 +14,10 @@ export class BikeComponent implements OnInit {
   ngOnInit(): void {
   }
   title = 'Super-Bikes';
-  bikes = [
-    {
-      bikecompany:'yamaha',
-      bikename:'r1-m',
-      topspeed:'280km/hr',
-      instock:5,
-      canpurchase:true,
-     
-    },
-    {
-      bikecompany:'bmw',
-      bikename:'1000rr',
-      topspeed:'299km/hr',
-      instock:7,
-      canpurchase:false,
-      
-    },
-    {
-      bikecompany:'kawasaki',
-      bikename:'ninja h2r',
-      topspeed:'320km/hr',
-      instock:0,
-      canpurchase:true,
-      
- 
-    }
-   ];
+  biKes : biKes[]= BIKES;
    calcProd(){
     let tot = 0;
-    for (let bike of this.bikes){
+    for (let bike of this.biKes){
       tot = tot + bike.instock;
     }
     return tot;
