@@ -3,9 +3,9 @@
 <ul>
     <li *ngFor="let bike of biKes">   
         <div class="col s12 m4">
-            <div class="card">
+            <div class="card" [class.clsName] = "bike.clsVar">
               <div class="card-image">
-                <img src="../../../assets/img/sample-1.jpg">
+                <img src="../../../assets/img/{{bike.prodImg}}">
                 <span class="card-title">{{ bike.bikename | uppercase }}</span>
                 <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
               </div>
@@ -24,6 +24,11 @@
                  <ng-template #stock> 
                   <b>Bikes Available:<mark>{{bike.instock}}</mark></b>
                  </ng-template>
+                 <p>
+                  <a class="waves-effect waves-light btn" (click)="downQuantity(bike)" ><i class="material-icons">remove</i></a>
+                  {{bike.quantity}}
+                  <a class="waves-effect waves-light btn"(click)= "upQuantity(bike)"><i class="material-icons">add</i></a>
+                 </p>
                  <ng-template #outofstock>
                     <b><mark>Bike is Out Of Stock</mark></b> 
                  </ng-template> 
