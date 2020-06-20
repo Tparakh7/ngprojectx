@@ -1,11 +1,11 @@
 <h3 align ="center">Super Bikes</h3>
 <h4> Total Bikes In Stock : {{calcProd()}}</h4>
 <ul>
-    <li *ngFor="let bike of biKes">   
-        <div class="col s12 m4">
-            <div class="card" [class.clsName] = "bike.clsVar">
-              <div class="card-image">
-                <img src="../../../assets/img/{{bike.prodImg}}">
+  <li *ngFor="let bike of biKes">   
+     <div class="col s12 m4">
+        <div class="card" [class.clsName] = "bike.clsVar">
+           <div class="card-image">
+               <img src="../../../assets/img/{{bike.prodImg}}" height="450px">
                 <span class="card-title">{{ bike.bikename | uppercase }}</span>
                 <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
               </div>
@@ -21,11 +21,14 @@
                  </div>
                  <ng-container *ngIf="bike.instock!=0;then stock;else outofstock"> 
                  </ng-container>
-                 <ng-template #stock> 
+                 <ng-template #stock>  
                   <b>Bikes Available:<mark>{{bike.instock}}</mark></b>
                  </ng-template>
                  <p>
                   <a class="waves-effect waves-light btn" (click)="downQuantity(bike)" ><i class="material-icons">remove</i></a>
+                  <input type="number"
+                   [(ngModel)]="bike.quantity" 
+                   (event)="bike.quantity=$event.target.value" > 
                   {{bike.quantity}}
                   <a class="waves-effect waves-light btn"(click)= "upQuantity(bike)"><i class="material-icons">add</i></a>
                  </p>
