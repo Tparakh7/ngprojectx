@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms'
+import { FormsModule } from '@angular/forms';
+import {RouterModule, Routes} from '@angular/router'
 
 import { AppComponent } from './app.component';
 import { SqrtPipe } from './pipes/sqrt.pipe';
@@ -16,6 +17,15 @@ import { PenComponent } from './products/pen/pen.component';
 import { BooksComponent } from './products/books/books.component';
 import { LaptopComponent } from './products/laptop/laptop.component';
 import { BikeComponent } from './products/bike/bike.component';
+import { PageNotFoundComponent } from './layouts/page-not-found/page-not-found.component';
+
+const appRoutes: Routes= [
+  {path:'bikes', component : BikeComponent}, 
+  {path:'books', component: BooksComponent},
+  {path:'laptops', component : LaptopComponent},
+  {path:'pens', component : PenComponent},
+
+];
 
 @NgModule({
   declarations: [
@@ -32,10 +42,11 @@ import { BikeComponent } from './products/bike/bike.component';
     PenComponent,
     BooksComponent,
     LaptopComponent,
-    BikeComponent
+    BikeComponent,
+    PageNotFoundComponent
   ],
   imports: [
-    BrowserModule,FormsModule
+    BrowserModule,FormsModule, RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]
