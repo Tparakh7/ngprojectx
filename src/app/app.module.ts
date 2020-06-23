@@ -18,14 +18,10 @@ import { BooksComponent } from './products/books/books.component';
 import { LaptopComponent } from './products/laptop/laptop.component';
 import { BikeComponent } from './products/bike/bike.component';
 import { PageNotFoundComponent } from './layouts/page-not-found/page-not-found.component';
+import { AppRoutingModule } from './modules/app-routing.module';
+import { HomeComponent } from './layouts/home/home.component';
 
-const appRoutes: Routes= [
-  {path:'bikes', component : BikeComponent}, 
-  {path:'books', component: BooksComponent},
-  {path:'laptops', component : LaptopComponent},
-  {path:'pens', component : PenComponent},
 
-];
 
 @NgModule({
   declarations: [
@@ -43,10 +39,11 @@ const appRoutes: Routes= [
     BooksComponent,
     LaptopComponent,
     BikeComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    HomeComponent
   ],
   imports: [
-    BrowserModule,FormsModule, RouterModule.forRoot(appRoutes)
+    BrowserModule,FormsModule, AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
