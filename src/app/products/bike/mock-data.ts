@@ -3,32 +3,32 @@ import { biKes } from './bike'
 export const BIKES: biKes[] = [
     {
       bikecompany:'yamaha',
-      bikename:'r1-m',
+      bikename:'R1-M',
       topspeed:280,
       instock:5,
       canpurchase:true,
-      prodImg:"mob1.png",
+      prodImg:"Yamaha.jpg",
       clsVar: true,
       quantity:0,
      
     },
     {
       bikecompany:'bmw',
-      bikename:'1000rr',
+      bikename:'1000RR',
       topspeed:299,
       instock:7,
       canpurchase:false,
-      prodImg:"mob2.png",
+      prodImg:"Bmw.jpg",
       clsVar: true,
       quantity:0,
     },  
     {
       bikecompany:'kawasaki',
-      bikename:'ninja h2r',
+      bikename:'H2R',
       topspeed:320,
       instock:0,
       canpurchase:true,
-      prodImg:"mob3.png",
+      prodImg:"Ninja.jpg",
       clsVar: true,
       quantity:0,
  
