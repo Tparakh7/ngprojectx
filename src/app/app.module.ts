@@ -20,6 +20,9 @@ import { BikeComponent } from './products/bike/bike.component';
 import { PageNotFoundComponent } from './layouts/page-not-found/page-not-found.component';
 import { AppRoutingModule } from './modules/app-routing.module';
 import { HomeComponent } from './layouts/home/home.component';
+import { KawasakiComponent } from './products/bike/kawasaki/kawasaki.component';
+import { YamahaComponent } from './products/bike/yamaha/yamaha.component';
+import { BikeNavComponent } from './products/bike/bike-nav/bike-nav.component';
 
 
 
@@ -40,7 +43,10 @@ import { HomeComponent } from './layouts/home/home.component';
     LaptopComponent,
     BikeComponent,
     PageNotFoundComponent,
-    HomeComponent
+    HomeComponent,
+    KawasakiComponent,
+    YamahaComponent,
+    BikeNavComponent
   ],
   imports: [
     BrowserModule,FormsModule, AppRoutingModule
