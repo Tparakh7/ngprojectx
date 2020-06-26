@@ -1,0 +1,36 @@
+import { biKes } from './../products/bike/bike';
+
+export const BIKES: biKes[] = [
+    {
+      bikecompany:'yamaha',
+      bikename:'R1-M',
+      topspeed:280,
+      instock:5,
+      canpurchase:true,
+      prodImg:"Yamaha.jpg",
+      clsVar: true,
+      quantity:0,
+     
+    },
+    {
+      bikecompany:'bmw',
+      bikename:'1000RR',
+      topspeed:299,
+      instock:7,
+      canpurchase:false,
+      prodImg:"Bmw.jpg",
+      clsVar: true,
+      quantity:0,
+    },  
+    {
+      bikecompany:'kawasaki',
+      bikename:'H2R',
+      topspeed:320,
+      instock:0,
+      canpurchase:true,
+      prodImg:"Ninja.jpg",
+      clsVar: true,
+      quantity:0,
+ 
+    }
+   ];
