@@ -7,10 +7,10 @@ import { Component, OnInit } from '@angular/core';
   <div class="section no-pad-bot">
     <div class="container">
       <br /><br />
-      <h1 class="header center teal-text text-lighten-2">Parallax Template</h1>
+      <h1 class="header center teal-text text-lighten-2">Shop-Site</h1>
       <div class="row center">
         <h5 class="header col s12 light">
-          A modern responsive front-end framework based on Material Design
+         
         </h5>
       </div>
       <div class="row center">
@@ -21,7 +21,7 @@ import { Component, OnInit } from '@angular/core';
     </div>
   </div>
   <div class="parallax">
-    <img src="./../assets/img/background1.jpg" alt="Unsplashed background img 1" />
+    <img src="./../assets/img/bannerOne.jpg" alt="Unsplashed background img 1" />
   </div>
 </div>
   `,

@@ -15,7 +15,7 @@ import { Component, OnInit } from '@angular/core';
         </p>
       </div>
       <div class="col l3 s12">
-        <h5 class="white-text">Settings</h5>
+        <h5 class="white-text">Categories</h5>
         <ul>
           <li><a class="white-text" href="#!">Link 1</a></li>
           <li><a class="white-text" href="#!">Link 2</a></li>
