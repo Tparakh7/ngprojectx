@@ -1,0 +1,14 @@
+<p>Verification</p>
+
+<input type="text" #user value="admin" /><br />
+<input type="password" #pass value="admin" /><br />
+
+<button
+  (click)="check(user.value, pass.value)"
+  class="waves-effect waves-light btn"
+>
+  Login
+</button>
+
+<br />
+<span style="color: red;">{{ message }}</span>

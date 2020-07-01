@@ -1,3 +1,6 @@
+import { LoginComponent } from './../admin/login/login.component';
+import { DashboardComponent } from './../admin/dashboard/dashboard.component';
+import { AuthaGuard } from './../guards/autha.guard';
 import { BikeNavComponent } from './../products/bike/bike-nav/bike-nav.component';
 import { YamahaComponent } from './../products/bike/yamaha/yamaha.component';
 import { KawasakiComponent } from './../products/bike/kawasaki/kawasaki.component';
@@ -12,9 +15,14 @@ import { LaptopComponent } from '../products/laptop/laptop.component';
 import { PenComponent } from '../products/pen/pen.component';
 
 
+
 const appRoutes: Routes= [
   {path:'', component : HomeComponent},
   {path:'home', component : HomeComponent},
+  {path:'login', component : LoginComponent},
+  {path:'dashboard', canActivate: [AuthaGuard], component : DashboardComponent},
+
+
   {path:'bikes', component : BikeNavComponent,
    children : [
      {
