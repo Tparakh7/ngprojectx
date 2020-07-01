@@ -9,10 +9,13 @@ import { Router} from '@angular/router';
 export class AuthaGuard implements CanActivate {
   constructor(private router: Router) {}
   routes: any;
+
+
   canActivate(
     route: ActivatedRouteSnapshot,
     state: RouterStateSnapshot
   ): boolean {
+    debugger;
     if (localStorage.getItem('username') != null) {
       return true;
     } else {
