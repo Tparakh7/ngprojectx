@@ -15,7 +15,7 @@ export class AuthaGuard implements CanActivate {
     route: ActivatedRouteSnapshot,
     state: RouterStateSnapshot
   ): boolean {
-    debugger;
+    
     if (localStorage.getItem('username') != null) {
       return true;
     } else {
