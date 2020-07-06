@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-home',
   template: `
-    <p align="center">
+    <p>
     <img src="../../../assets/img/Welcome2.gif" />
     </p>
   `,
