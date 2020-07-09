@@ -1,3 +1,5 @@
+import { LapofferComponent } from './../products/laptop/lapoffer/lapoffer.component';
+import { LapdetailComponent } from './../products/laptop/lapdetail/lapdetail.component';
 import { LoginComponent } from './../admin/login/login.component';
 import { DashboardComponent } from './../admin/dashboard/dashboard.component';
 import { AuthaGuard } from './../guards/autha.guard';
@@ -38,6 +40,8 @@ const appRoutes: Routes= [
   },  
   {path:'books', component: BooksComponent},
   {path:'laptops', component : LaptopComponent},
+  {path:'lapdetails', component : LapdetailComponent, outlet:"outlet1"},
+  {path:'lapoffers', component : LapofferComponent, outlet:"outlet2"},
   {path:'pens', component : PenComponent}, 
   {path:'**', component : PageNotFoundComponent} 
 

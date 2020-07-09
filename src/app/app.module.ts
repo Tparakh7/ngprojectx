@@ -27,6 +27,9 @@ import { BikeNavComponent } from './products/bike/bike-nav/bike-nav.component';
 import { AdminComponent } from './admin/admin/admin.component';
 import { DashboardComponent } from './admin/dashboard/dashboard.component';
 import { LoginComponent } from './admin/login/login.component';
+import { HostDirective } from './host.directive';
+import { LapdetailComponent } from './products/laptop/lapdetail/lapdetail.component';
+import { LapofferComponent } from './products/laptop/lapoffer/lapoffer.component';
 
 
 
@@ -53,7 +56,10 @@ import { LoginComponent } from './admin/login/login.component';
     BikeNavComponent,
     AdminComponent,
     DashboardComponent,
-    LoginComponent
+    LoginComponent,
+    HostDirective,
+    LapdetailComponent,
+    LapofferComponent
   ],
   imports: [
     BrowserModule,FormsModule, AppRoutingModule

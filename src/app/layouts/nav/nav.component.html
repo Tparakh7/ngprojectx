@@ -5,6 +5,15 @@
            <li><a href="#">Home</a></li>   
            <li><a routerLink="bikes">Bikes</a></li> 
            <li><a routerLink="laptops">Laptops</a></li> 
+           <li>
+            <a [routerLink]="[{ outlets: { outlet1: ['lapdetails'] } }]"
+              >Laptop Details</a
+            >
+          </li>
+          <li>
+            <a [routerLink]="[{ outlets: { outlet2: ['lapoffers'] } }]"
+              >Laptop Offers</a>
+          </li>
            <li><a routerLink="books">Books</a></li> 
            <li><a routerLink="pens">Pens</a></li>
            
