@@ -30,6 +30,17 @@
         <li><a routerLink="pens">Pens</a></li>
         <li><a routerLink="dashboard">Dashboard</a></li>
         <li><a routerLink="login">Login</a></li>
+        <li><a (click)="logout()">LogOut</a></li>
+        <li>
+          <a [routerLink]="[{ outlets: { outlet1: ['lapdetails'] } }]"
+            >Laptop Details</a
+          >
+        </li>
+        <li>
+          <a [routerLink]="[{ outlets: { outlet2: ['lapoffers'] } }]"
+            >Laptop Offers</a>
+        </li>
+
            
       </ul>
       <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>

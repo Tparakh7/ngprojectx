@@ -12,5 +12,13 @@ export class DashboardComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  
+    prods = [];
+    addProd(newProd: string) {
+      if (newProd) {
+        this.prods.push(newProd);
+      }
+    }
+  }
 
-}
+
