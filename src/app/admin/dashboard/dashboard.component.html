@@ -1,9 +1,22 @@
-<h2 align="center">Dashboard</h2>
-<input #newProd
-      (keyup.enter)="addProd(newProd.value); newProd.value='' "
-      (blur)="addProd(newProd.value); newProd.value='' ">
+<h2 >Dashboard</h2>
 
-    <button (click)="addProd(newProd.value)" class="waves-effect waves-light btn">Add</button>
-
-    <ul><li *ngFor="let prod of prods">{{prod}}<hr></li></ul>
+    
+              <div class="col s12 m10">
+        
+        <div class="card horizontal">
+          
+          <div class="card-stacked">
+            <div class="card-content">
+                
+              <input #newProd
+              (keyup.enter)="addProd(newProd.value); newProd.value='' "
+              (blur)="addProd(newProd.value); newProd.value='' ">
+        
+            <button (click)="addProd(newProd.value)" class="waves-effect waves-light btn">Add</button>
+              <ul><li *ngFor="let prod of prods">{{prod}}<hr></li></ul>
+            </div>
+            
+          </div>
+        </div>
+      </div>
 

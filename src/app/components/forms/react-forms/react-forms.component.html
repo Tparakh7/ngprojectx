@@ -1,0 +1,30 @@
+<p>Reactive forms</p>
+
+<form [formGroup]="formObject"> 
+    <div>
+      <label>UserID</label>
+      <input type="text" formControlName="userId" /> 
+  
+      <div
+        style="color: red;"
+        *ngIf="uName.touched && uName.invalid"
+      >
+        Invalid Input
+        <div *ngIf="uName.errors.required">Required!</div>
+        <div *ngIf="uName.errors.minlength">
+            Minimum {{uName.errors.minlength.requiredLength}} Length Required
+          </div>
+
+      </div>
+    </div>
+    <div>
+      <label>Password</label>
+      <input type="password" formControlName="passkey"/>
+      <div 
+       style="color: red;"
+       *ngIf="formObject.get('passkey').touched && formObject.get('passkey').invalid"
+      >
+        Invalid Input
+      </div>
+    </div>
+  </form>   

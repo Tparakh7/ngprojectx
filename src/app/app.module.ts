@@ -2,6 +2,8 @@ import { AuthaGuard } from './guards/autha.guard';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
+
 import {RouterModule, Routes} from '@angular/router'
 
 import { AppComponent } from './app.component';
@@ -30,6 +32,8 @@ import { LoginComponent } from './admin/login/login.component';
 import { HostDirective } from './host.directive';
 import { LapdetailComponent } from './products/laptop/lapdetail/lapdetail.component';
 import { LapofferComponent } from './products/laptop/lapoffer/lapoffer.component';
+import { TempFormsComponent } from './components/forms/temp-forms/temp-forms.component';
+import { ReactFormsComponent } from './components/forms/react-forms/react-forms.component';
 
 
 
@@ -59,10 +63,12 @@ import { LapofferComponent } from './products/laptop/lapoffer/lapoffer.component
     LoginComponent,
     HostDirective,
     LapdetailComponent,
-    LapofferComponent
+    LapofferComponent,
+    TempFormsComponent,
+    ReactFormsComponent
   ],
   imports: [
-    BrowserModule,FormsModule, AppRoutingModule
+    BrowserModule,FormsModule, AppRoutingModule, ReactiveFormsModule
   ],
   providers: [AuthaGuard],
   bootstrap: [AppComponent]

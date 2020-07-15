@@ -1,3 +1,5 @@
+import { ReactFormsComponent } from './../components/forms/react-forms/react-forms.component';
+import { TempFormsComponent } from './../components/forms/temp-forms/temp-forms.component';
 import { LapofferComponent } from './../products/laptop/lapoffer/lapoffer.component';
 import { LapdetailComponent } from './../products/laptop/lapdetail/lapdetail.component';
 import { LoginComponent } from './../admin/login/login.component';
@@ -39,6 +41,9 @@ const appRoutes: Routes= [
    ]
   },  
   {path:'books', component: BooksComponent},
+  {path:'temp', component: TempFormsComponent},
+  {path:'react', component: ReactFormsComponent},
+  
   {path:'laptops', component : LaptopComponent},
   {path:'lapdetails', component : LapdetailComponent, outlet:"outlet1"},
   {path:'lapoffers', component : LapofferComponent, outlet:"outlet2"},
